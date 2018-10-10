@@ -7,12 +7,17 @@ Repositorio del proyecto desarrollado a lo largo de la asignatura Infraestructur
 
 El proyecto se tratará de un servicio para consultar datos estáticos del videojuego League of Legends.
 
-## Herramientas
+## Clases
 
-* El lenguaje usado será Typescript sobre el entorno de desarrollo Node.js y el framework Express.
-* Se utilizará la base de datos documental MongoDB.
-* Para los tests utilizaré la librería Chai y el framework Mocha, son las herramientas más extendidas actualmente para el desarrollo de tests Node. Chai amplía las funciones que Node provee con assert.
-* Gestor de versiones será n. Que elimina algunas de las características molestas que tenía NVM.
+### Routes
+
+Esta [clase](https://github.com/PFeynman/proyecto-iv/blob/master/src/routes/routeProvider.ts) define las rutas de la API y realiza la llamada a las funciones que gestionan las peticiones que se realicen.
+
+Para testearla es necesario instalar las dependencias con _npm install_ y ejecutar los tests con '''npm run test'''.
+
+## Documentación
+[Herramientas utilizadas](https://github.com/PFeynman/proyecto-iv/blob/master/doc/herramientas.md)
+
 
 ## Authors
 
