@@ -1,6 +1,7 @@
 # League Static
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Build Status](https://travis-ci.org/PFeynman/proyecto-iv.svg?branch=master)](https://travis-ci.org/PFeynman/proyecto-iv)
 
 Repositorio del proyecto desarrollado a lo largo de la asignatura Infraestructura Virtual de 4º del Grado de Ingeniería Informática en la Universidad de Granada.
 
