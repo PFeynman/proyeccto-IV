@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/*.test.ts",
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
     "build": "tsc",
     "dev": "ts-node ./src/server.ts",
     "start": "./node_modules/.bin/ts-node ./src/server.ts",
