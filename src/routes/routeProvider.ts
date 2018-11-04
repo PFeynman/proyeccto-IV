@@ -4,6 +4,13 @@ export class Routes {
 
     public routes(app): void {
 
+        app.route('/')
+            .get((req: Request, res: Response) => {
+                res.status(200).send({
+                    status: 'OK',
+                })
+            })
+
         app.route('/champions')
             // Get all champions
             .get((req: Request, res: Response) => {
