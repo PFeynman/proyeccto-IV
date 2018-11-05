@@ -8,6 +8,12 @@ export class Routes {
             .get((req: Request, res: Response) => {
                 res.status(200).send({
                     status: 'OK',
+                    routes: {
+                        allChampions: '/champions',
+                        specificChampion: '/champion/:id',
+                        allItems: '/items',
+                        specificItem: '/item/:id'
+                    }
                 })
             })
 
