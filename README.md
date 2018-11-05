@@ -2,6 +2,7 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Build Status](https://travis-ci.org/PFeynman/proyecto-iv.svg?branch=master)](https://travis-ci.org/PFeynman/proyecto-iv)
+[![Deployment](https://www.herokucdn.com/deploy/button.svg)](https://league-static.herokuapp.com/)
 
 Repositorio del proyecto desarrollado a lo largo de la asignatura Infraestructura Virtual de 4º del Grado de Ingeniería Informática en la Universidad de Granada.
 
@@ -17,7 +18,15 @@ Para testearla es necesario instalar las dependencias con _npm install_ y ejecut
 
 ## Documentación
 [Herramientas utilizadas](https://github.com/PFeynman/proyecto-iv/blob/master/doc/herramientas.md)
+[Despliegue en Heroku](https://github.com/PFeynman/proyecto-iv/blob/master/doc/despliegue.md)
 
+## Despliegue
+Puede accederse a la aplicación a través de [este enlace](https://league-static.herokuapp.com/).
+* **/** muestra el estado (OK) y el resto de rutas disponibles.
+* **/champions** mostrará todos los campeones disponibles.
+* **/champion/:id** mostrará información de un campeón específico.
+* **/items** mostrará todos los objetos disponibles.
+* **/item/:id** mostrará información de un objeto específico.
 
 ## Authors
 
