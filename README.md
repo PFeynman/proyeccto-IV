@@ -17,9 +17,8 @@ Esta [clase](https://github.com/PFeynman/proyecto-iv/blob/master/src/routes/rout
 Para testearla es necesario instalar las dependencias con _npm install_ y ejecutar los tests con '''npm run test'''.
 
 ## Documentación
-[Herramientas utilizadas](https://github.com/PFeynman/proyecto-iv/blob/master/doc/herramientas.md)
-
-[Despliegue en Heroku](https://github.com/PFeynman/proyecto-iv/blob/master/doc/despliegue.md)
+* [Herramientas utilizadas](https://github.com/PFeynman/proyecto-iv/blob/master/doc/herramientas.md)
+* [Despliegue en Heroku](https://github.com/PFeynman/proyecto-iv/blob/master/doc/despliegue.md)
 
 ## Despliegue
 Puede accederse a la aplicación a través de [este enlace](https://league-static.herokuapp.com/).
