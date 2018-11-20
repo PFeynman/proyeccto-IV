@@ -25,7 +25,7 @@ Para testearla es necesario instalar las dependencias con _npm install_ y ejecut
 ## Documentación
 * [Herramientas utilizadas](https://github.com/PFeynman/proyecto-iv/blob/master/doc/herramientas.md)
 * [Despliegue en Heroku](https://github.com/PFeynman/proyecto-iv/blob/master/doc/despliegue.md)
-* [Despliegue usando contenedores](https://github.com/PFeynman/proyecto-iv/blob/master/doc/contenedores.md)
+* [Despliegue usando Docker](https://github.com/PFeynman/proyecto-iv/blob/master/doc/docker.md)
 * [Añadir imagen a DockerHub](https://github.com/PFeynman/proyecto-iv/blob/master/doc/dockerhub.md)
 
 ## Despliegue
