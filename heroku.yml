@@ -1,0 +1,10 @@
+setup:
+  addons:
+    - plan: 'mongolab:sandbox'
+      as: MONGODB
+  config: {}
+build:
+  languages:
+    - nodejs
+run:
+  web: npm start
