@@ -4,7 +4,7 @@ export class Routes {
 
     public routes(app): void {
 
-        app.route('/')
+        app.route('/status')
             .get((req: Request, res: Response) => {
                 res.status(200).send({
                     status: 'OK',
