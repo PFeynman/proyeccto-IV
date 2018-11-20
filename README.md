@@ -2,11 +2,17 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Build Status](https://travis-ci.org/PFeynman/proyecto-iv.svg?branch=master)](https://travis-ci.org/PFeynman/proyecto-iv)
-[![Deployment](https://www.herokucdn.com/deploy/button.svg)](https://league-static.herokuapp.com/)
+[![Deployment](https://www.herokucdn.com/deploy/button.svg)](https://league-static.herokuapp.com/status)
+[![Build DockerHub](https://img.shields.io/badge/build-DockerHub-blue.svg?logo=docker)](https://hub.docker.com/r/pfeynman/proyecto-iv/)
 
 Repositorio del proyecto desarrollado a lo largo de la asignatura Infraestructura Virtual de 4º del Grado de Ingeniería Informática en la Universidad de Granada.
 
 El proyecto se tratará de un servicio para consultar datos estáticos del videojuego League of Legends.
+
+## Instalación
+
+Descaragar el repositorio y ejecutar _npm install_ 
+Para utilizar la app, ejecutar _npm start_
 
 ## Clases
 
@@ -19,6 +25,8 @@ Para testearla es necesario instalar las dependencias con _npm install_ y ejecut
 ## Documentación
 * [Herramientas utilizadas](https://github.com/PFeynman/proyecto-iv/blob/master/doc/herramientas.md)
 * [Despliegue en Heroku](https://github.com/PFeynman/proyecto-iv/blob/master/doc/despliegue.md)
+* [Despliegue usando contenedores](https://github.com/PFeynman/proyecto-iv/blob/master/doc/contenedores.md)
+* [Añadir imagen a DockerHub](https://github.com/PFeynman/proyecto-iv/blob/master/doc/dockerhub.md)
 
 ## Despliegue
 Puede accederse a la aplicación a través de [este enlace](https://league-static.herokuapp.com/).
@@ -27,6 +35,8 @@ Puede accederse a la aplicación a través de [este enlace](https://league-stati
 * **/champion/:id** mostrará información de un campeón específico.
 * **/items** mostrará todos los objetos disponibles.
 * **/item/:id** mostrará información de un objeto específico.
+
+Contenedor: https://league-static.herokuapp.com/status
 
 ## Authors
 
