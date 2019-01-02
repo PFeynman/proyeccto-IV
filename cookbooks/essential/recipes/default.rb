@@ -1,4 +1,5 @@
 # DOC: https://docs.chef.io/
+
 # Creo el usuario de la aplicación
 user 'leaguestatic' do
     comment 'Usuario para la aplicación league-static'
