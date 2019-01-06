@@ -1,10 +1,12 @@
 import { Request, Response } from "express";
 
+import { ItemAPI } from './Items-API';
 import { ChampionAPI } from './Champions-API';
 import { request } from "https";
 
 export class Routes {
     championApi: ChampionAPI = new ChampionAPI()
+    itemApi: ItemAPI = new ItemAPI()
 
     constructor() {
     }
@@ -58,9 +60,7 @@ export class Routes {
         app.route('/items')
             // Get all items
             .get((req: Request, res: Response) => {
-                res.status(200).send({
-                    message: 'GET all items page successful',
-                })
+                this.itemApi.getAll(res);
             })
             // Create new item
             .post((req: Request, res: Response) => {
