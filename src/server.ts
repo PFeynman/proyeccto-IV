@@ -1,7 +1,7 @@
 import app from './app';
 import * as mongoose from 'mongoose';
 
-//mongoose.connect('mongodb://localhost:27017/league-static');
+mongoose.connect('mongodb://localhost:27017/league-static', { useNewUrlParser: true });
 
 const PORT = process.env.PORT || 3000;
 

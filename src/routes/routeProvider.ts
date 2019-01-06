@@ -1,11 +1,17 @@
-import {Request, Response} from "express";
+import { Request, Response } from "express";
+
+import { ChampionAPI } from './Champions-API';
 
 export class Routes {
+    championApi: ChampionAPI = new ChampionAPI()
+
+    constructor() {
+    }
 
     public routes(app): void {
 
         app.route('/status')
-            .get((req: Request, res: Response) => {
+            .get((req: Request, res: Response) => {                
                 res.status(200).send({
                     status: 'OK',
                     routes: {
@@ -20,9 +26,7 @@ export class Routes {
         app.route('/champions')
             // Get all champions
             .get((req: Request, res: Response) => {
-                res.status(200).send({
-                    message: 'GET all champion page successful',
-                })
+                this.championApi.getAll(res)
             })
             // Create new champion
             .post((req: Request, res: Response) => {
