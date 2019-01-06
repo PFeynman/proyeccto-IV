@@ -25,6 +25,11 @@ module.exports = shipit => {
     return shipit.remote('npm start', {cwd: '/var/apps/leaguestatic/current'})
   })
 
+  // Tarea para detener el servicio
+  shipit.task('stop', async () => {
+    return shipit.remote("kill -9 $(ps aux | grep 'node' | awk '{print $2}')")
+  })
+
   // Tarea para insertar los datos en la base de datos
   shipit.task('initDB', async () => {
     return shipit.remote('mongoimport data/champions.json --db league-static -c champions && mongoimport data/items.json --db league-static -c items', {cwd: '/var/apps/leaguestatic/current'})
