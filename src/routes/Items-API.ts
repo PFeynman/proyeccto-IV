@@ -14,4 +14,15 @@ export class ItemAPI {
                 res.status(204).send({ 'data': 'No data' });
             });
     }
+
+    public getOne(res: Response, id: string) {
+        var response: IItem;
+        
+        Item.findOne({_id: id})
+            .then((item: IItem) => {                
+                res.status(200).send({
+                    data: item
+                })
+            });
+    }
 }

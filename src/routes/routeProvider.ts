@@ -71,9 +71,8 @@ export class Routes {
         app.route('/item/:itemId')
             // Get specific item
             .get((req: Request, res: Response) => {
-                res.status(200).send({
-                    message: 'GET specific item page successful',
-                })
+                var itemId = req.params.itemId;
+                this.itemApi.getOne(res, itemId);
             })
             // Update item
             .put((req: Request, res: Response) => {

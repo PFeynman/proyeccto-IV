@@ -1,13 +1,13 @@
 import { Document, Schema, Model, model } from 'mongoose';
 
 export interface IItem extends Document {
-    _id: number;
+    _id: string;
     name: string;
     into: Array<number>;
 }
 
 export const ItemSchema: Schema = new Schema({
-    _id: { type: Number, required: true },
+    _id: { type: String, required: true },
     name: { type: String, required: true },
     into: { type: Array, default: []}
 });
