@@ -1,6 +1,4 @@
-// shipitfile.js
 module.exports = shipit => {
-  // Load shipit-deploy tasks
   require('shipit-deploy')(shipit)
 
   shipit.initConfig({
@@ -11,7 +9,7 @@ module.exports = shipit => {
       keepReleases: '1',
     },
     staging: {
-      servers: 'deploy@188.166.4.48',
+      servers: 'vagrant@188.166.12.203',
     },
   })
 
