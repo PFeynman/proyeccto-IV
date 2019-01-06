@@ -3,6 +3,7 @@ import { Response } from 'express'
 import { Champion, IChampion } from '../models/champion'
 
 export class ChampionAPI {
+    
     public getAll(res: Response){
         Champion.find()
             .then((champions: Array<IChampion>) => {
