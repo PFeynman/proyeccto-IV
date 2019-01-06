@@ -52,18 +52,3 @@ service 'mongodb' do
     supports :status => true, :restart => true
     action [:enable, :start]
 end
-
-# Clonar repositorio
-git 'leagestatic' do
-    repository 'https://github.com/PFeynman/proyecto-iv'
-    user 'leaguestatic'
-    group 'leaguestatic'
-    destination '/leaguestatic'
-    action :checkout
-end
-
-# Instalar paquetes de la aplicación
-execute 'install-packages' do
-    command 'npm install'
-    cwd '/leaguestatic'
-end
