@@ -15,4 +15,13 @@ export class ChampionAPI {
             });
     }
 
+    public getOne(res: Response, id: string) {
+        var response: IChampion;
+        Champion.findOne({_id: id})
+            .then((champion: IChampion) => {
+                res.status(200).send({
+                    data: champion
+                })
+            });
+    }
 }

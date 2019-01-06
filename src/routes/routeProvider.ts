@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 
 import { ChampionAPI } from './Champions-API';
+import { request } from "https";
 
 export class Routes {
     championApi: ChampionAPI = new ChampionAPI()
@@ -26,7 +27,7 @@ export class Routes {
         app.route('/champions')
             // Get all champions
             .get((req: Request, res: Response) => {
-                this.championApi.getAll(res)
+                this.championApi.getAll(res);
             })
             // Create new champion
             .post((req: Request, res: Response) => {
@@ -38,9 +39,8 @@ export class Routes {
         app.route('/champion/:championId')
             // Get specific champion
             .get((req: Request, res: Response) => {
-                res.status(200).send({
-                    message: 'GET champion page successful',
-                })
+                var championId = req.params.championId;
+                this.championApi.getOne(res, championId);
             })
             // Update champion
             .put((req: Request, res: Response) => {
