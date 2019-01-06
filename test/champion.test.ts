@@ -13,6 +13,13 @@ describe('Champion model test', () => {
         });
     });
 
+    it('Should be invalid if name is empty', function(done) {
+        c.validate(function(err) {
+            chai.expect(err.errors.name).to.exist;
+            done();
+        });
+    });
+
     it('Should be invalid if _id is empty', function(done) {
         c.validate(function(err) {
             chai.expect(err.errors._id).to.exist;
@@ -27,7 +34,6 @@ describe('Database test for champions', () => {
         const db = mongoose.connection;
         db.on('error', console.error.bind(console, 'connection error'));
         db.once('open', function() {
-          console.log('We are connected to test database!');
           done();
         });
     });
@@ -35,6 +41,7 @@ describe('Database test for champions', () => {
     it('Should save a new champion in test database', function(done) {
         var testChampion = new Champion({
           _id: 'TestChampion',
+          name: 'Test Champion Name',
           title: 'Test Champion Title'
         });
    
