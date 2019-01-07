@@ -42,6 +42,8 @@ Para testearlas es necesario instalar las dependencias con _npm install_ y ejecu
 * **/items** mostrará todos los objetos disponibles.
 * **/item/:id** mostrará información de un objeto específico.
 
+Contenedor: https://league-static.herokuapp.com/status
+
 Despliegue final: 142.93.235.169
 
 ## Authors
