@@ -43,6 +43,7 @@ Puede accederse a la aplicación a través de [este enlace](https://league-stati
 * **/item/:id** mostrará información de un objeto específico.
 
 Contenedor: https://league-static.herokuapp.com/status
+
 Despliegue final: 142.93.235.169
 
 ## Authors
