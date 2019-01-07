@@ -35,14 +35,12 @@ Para testearlas es necesario instalar las dependencias con _npm install_ y ejecu
 * [Despliegue final de la aplicación](https://github.com/PFeynman/proyecto-iv/blob/master/doc/despliegue_final.md)
 
 ## Despliegue
-Puede accederse a la aplicación a través de [este enlace](https://league-static.herokuapp.com/).
+
 * **/status** muestra el estado (OK) y el resto de rutas disponibles.
 * **/champions** mostrará todos los campeones disponibles.
 * **/champion/:id** mostrará información de un campeón específico.
 * **/items** mostrará todos los objetos disponibles.
 * **/item/:id** mostrará información de un objeto específico.
-
-Contenedor: https://league-static.herokuapp.com/status
 
 Despliegue final: 142.93.235.169
 
